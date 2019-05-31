@@ -1,0 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Work+Sans&display=swap" rel="stylesheet">
+
+<section>
+
+  <div class="image">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHz8wDLC-Ra5c692JA57BvONFe8DIvUTf1HbvqyS8CYapZDPO-">
+  </div>
+
+  <div class = "profile">
+    <h2>{{ userProfile.name }}</h2>
+    <p class="contactInfo">{{ userProfile.contactInfo }}</p>
+    <p>{{ userProfile.bio }}</p>
+    <button [routerLink]="['/edit']" >Edit</button>
+  </div>
+
+</section>

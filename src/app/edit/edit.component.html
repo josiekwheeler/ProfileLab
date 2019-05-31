@@ -1,0 +1,15 @@
+<section>
+<h2>Use the form below to update your profile.</h2>
+<form novalidate #form="ngForm" (ngSubmit)="saveProfile(userProfile)">
+  <label for="name"> Name
+    <input type="text" name="name" [(ngModel)]="userProfile.name"> 
+  </label>
+  <label for="contact">Contact
+    <input type="text" name="contact" [(ngModel)]="userProfile.contactInfo">
+  </label>
+  <label for="bio">Bio
+      <input class="bio" type="text" name="bio" [(ngModel)]="userProfile.bio">
+    </label>
+  <button>Update</button>
+</form>
+</section>
